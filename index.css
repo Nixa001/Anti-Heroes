@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+
+:root {
+  --firstcolor: #080321;
+  --textcolor: #4e2202;
+  --whitecolor: #fff;
+}
+
+* {
+  color: var(--textcolor);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  width: 100vw;
+  background-color: var(--firstcolor);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+input {
+  width: 30vw;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline-width: 0;
+  background-color: #fff;
+}
+
+.select-values {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+}
+
+table thead {
+  position: sticky;
+  top: 2rem;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 0.8em;
+  width: 100vw;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+table thead tr {
+  background-color: var(--firstcolor);
+  color: #ffffff;
+}
+table th {
+  font-size: 18px;
+  width: 10%;
+  padding: 12px 10px;
+  text-align: left;
+  color: #fff;
+}
+table th:hover {
+  background: #221d41fa;
+}
+table tbody {
+  text-align: center;
+}
+table tbody td {
+  text-align: left;
+  padding: 5px 10px;
+  width: 10%;
+}
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+table tbody tr:nth-of-type(even) {
+  background-color: #f2f2f2;
+}
+table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--firstcolor);
+}
+table th {
+  cursor: pointer;
+}
+
+input[type="text"],
+select {
+  padding: 5px;
+  margin: 10px;
+}
+
+.pagination {
+  display: block;
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+button {
+  width: 100px;
+  background-color: var(--textcolor);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.icon {
+  font-family: "Material Icons";
+  color: azure;
+}

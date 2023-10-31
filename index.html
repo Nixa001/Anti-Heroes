@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <title>Superhero</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <header>
+    <h1>SUPERHEROES DATABASE</h1>
+    <input type="text" id="search" placeholder="Search...">
+    <div class="select-values">
+      <select id="searchField">
+        <option value="name">Name</option>
+        <option value="full-name">Full-Name</option>
+        <option value="race">Race</option>
+        <option value="gender">Gender</option>
+      </select>
+      <select id="Size">
+        <option value="10">10</option>
+        <option value="20" selected>20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="All">All</option>
+      </select>
+    </div>
+
+  </header>
+  <table class="table-sortable">
+    <thead>
+      <tr>
+        <th>Icon</th>
+        <th name="name" class="current-filter">Name <span class="material-symbols-outlined icon"></span></th>
+        <th name="full-name">Full-Name<span class="material-symbols-outlined icon"></span></th>
+        <th name="powerstats">Powerstats<span class="material-symbols-outlined icon"></span></th>
+        <th name="gender">Gender<span class="material-symbols-outlined icon"></span></th>
+        <th name="race">Race<span class="material-symbols-outlined icon"></span></th>
+        <th name="height">Height<span class="material-symbols-outlined icon"></span></th>
+        <th name="weight">Weight<span class="material-symbols-outlined icon"></span></th>
+        <th name="place_of_birth">Place Of Birth<span class="material-symbols-outlined icon"></span></th>
+        <th name="alignment">Alignment<span class="material-symbols-outlined icon"></span></th>
+      </tr>
+    </thead>
+    <tbody id="heroesTable"></tbody>
+  </table>
+
+  <script src="./script.js"></script>
+  <script src="./sort-functions.js"></script>
+  <div class="pagination">
+    <button id="prevPage">Previous</button>
+    <span class="current_page"></span>/
+    <span class="max_page"></span>
+    <button id="nextPage">Next</button>
+  </div>
+</body>
+
+</html>
